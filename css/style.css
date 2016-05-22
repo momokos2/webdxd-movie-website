@@ -1,0 +1,142 @@
+html{
+	background:url(../img/background.jpg);
+	background-size: cover;  /*no strentch*/
+	/*strentch
+	background-size: 100% 100%; 
+	height: 100%;
+	*/
+	font-size:14px;
+}
+
+
+nav{
+	background-color: black;
+	color: white;
+	height: 60px;
+	position: fixed;
+	width: 100%; /*nav bar span all the page*/
+	/*deault positon static*/
+	z-index: 99;
+}
+
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+footer{
+	color:white;
+	background-color: black;
+	text-align: center;
+}
+
+footer ul {
+	margin: 0;
+	padding:20px 0;
+}
+
+footer ul li{
+	display:inline-block;
+	margin: 20px;
+}
+
+/*the more specific defined, the higher priority it gets*/
+
+/*
+nav ul li{
+	display:inline-block;
+}
+*/
+
+/* helper class */
+.center{
+	text-align: center;
+}
+
+.full-width{
+	width:100%;
+}
+
+.grow{
+	transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+	transform:scale(1.03);
+	filter: brightness(50%);
+	-webkit-filter:brightness(50%);
+}
+
+
+/* end helper class */
+
+.nav-bar{
+	margin:0;
+	padding:0;
+	/*display:inline-block;*/
+	float:right;
+}
+
+.nav-bar > li {
+	display:inline-block;
+	border: 1px solid white;
+	margin: 10px;
+	/*space between a and another object*/
+	padding: 10px;
+	/*space between text contetn and border*/
+	/*transition: all .2s ease-in-out;*/
+}
+
+.nav-bar li:hover{
+	background-color: rgba(255,255,255,0.5);
+	cursor:pointer;
+}
+
+.nav-logo{
+	width: 50px;
+	height: 50px;
+	margin-left:10px;
+	margin-top:5px;
+}
+
+.hometitle{
+	font-family: 'Biryani', sans-serif;
+	font-size: 2.5rem;
+}
+
+.poster{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.poster div{
+	display:inline-block;
+	border: 5px solid white;
+	margin:0 1%;
+	/*updown leftright*/
+	width:30%;
+	position:relative;
+}
+
+.poster div img{
+	width:100%;
+	/*filter: brightness(50%);
+	-webkit-filter:brightness(50%);*/
+}
+
+.poster div h3{
+	position:absolute;
+	color:white;
+	top:50%;
+	left:0;
+	text-align: center;
+	width:100%;
+	font-size:2.5rem;
+	margin:0;
+	transform: translateY(-50%);  /*-50% of its self*/
+	background-color: rgba(0,0,0,0.3);
+}
+
+
+
